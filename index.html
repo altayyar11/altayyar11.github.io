@@ -40,14 +40,16 @@
   main {
     width: 100%;
     max-width: 30rem;
-    padding: 0.5rem 1.25rem 1rem;
+    padding: 0.5rem 1.25rem 0.9rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   .logo {
-    width: 7.5rem;
+    width: 11.25rem;
     height: auto;
     border-radius: 0.75rem;
-    margin: -0.5rem auto 0 -1.1rem;
+    margin: -0.25rem auto -0.5rem;
     display: block;
   }
   h1 {
@@ -59,13 +61,14 @@
     white-space: nowrap;
   }
   .title {
-    margin: 0 0 1rem;
-    color: #d4af37;
+    margin: auto 0 0;
+    padding-top: 1rem;
+    color: #fff;
     font-size: clamp(1.4rem, 7.4vw, 1.9rem);
     font-weight: 700;
     line-height: 1.35;
   }
-  .divider { display: block; width: 16rem; max-width: 80%; height: auto; margin: 1.4rem auto 0; }
+  .divider { display: block; width: 16rem; max-width: 80%; height: auto; margin: 1.1rem auto 0; }
   nav { display: grid; gap: 1.05rem; }
   .link {
     --top: #2c302c; --bottom: #131513; --edge: #000; --rim: #cfd3cf;
@@ -73,7 +76,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    min-height: 3.9rem;
+    min-height: 3.7rem;
     padding: 0.35rem 1rem;
     border-radius: 1rem;
     border: 2px solid var(--rim);
@@ -130,8 +133,6 @@
   <h1>حسينية جعفر الطيار(ع) - سيهات</h1>
 
 
-  <p class="title"><span style="white-space: nowrap;">حسينية جعفر الطيار(ع) -</span> <span style="white-space: nowrap;">سيهات</span></p>
-
   <nav aria-label="روابط الحسينية">
 
     <!-- 3) LINKS: replace only what is inside href="..." -->
@@ -175,6 +176,8 @@
     <circle cx="132" cy="10" r="2" fill="#d4af37"/>
     <circle cx="168" cy="10" r="2" fill="#d4af37"/>
   </svg>
+
+  <p class="title"><span style="white-space: nowrap;">حسينية جعفر الطيار(ع) -</span> <span style="white-space: nowrap;">سيهات</span></p>
 
 </main>
 </body>
