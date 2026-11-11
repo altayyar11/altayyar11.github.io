@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>حسينية جعفر الطيار(ع) - سيهات</title>
 <meta name="description" content="روابط الحسينية: مجتمع الواتساب، التواصل، الموقع، قناة اليوتيوب، والتسجيلات الصوتية">
-<meta name="theme-color" content="#070907">
+<meta name="theme-color" content="#05120a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
@@ -20,15 +20,15 @@
     --accent-text: #ffffff;
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; background: #070907; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; background: #05120a; }
   body {
     margin: 0;
     min-height: 100vh;
     background:
-      radial-gradient(ellipse 80% 34% at 50% 0%, rgba(212, 175, 55, 0.18), transparent 70%),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d4af37' stroke-opacity='0.08' stroke-width='1'%3E%3Crect x='12' y='12' width='40' height='40'/%3E%3Crect x='12' y='12' width='40' height='40' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='6'/%3E%3C/g%3E%3C/svg%3E"),
-      linear-gradient(180deg, #070907 0%, #0a100b 60%, #0e0b06 100%);
-    background-color: #070907;
+      radial-gradient(ellipse 80% 34% at 50% 0%, rgba(46, 190, 100, 0.22), transparent 72%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%2382e0a6' stroke-opacity='0.09' stroke-width='1'%3E%3Crect x='12' y='12' width='40' height='40'/%3E%3Crect x='12' y='12' width='40' height='40' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='6'/%3E%3C/g%3E%3C/svg%3E"),
+      linear-gradient(180deg, #05120a 0%, #082015 55%, #06160d 100%);
+    background-color: #05120a;
     color: var(--text);
     font-family: "Amiri", "Noto Naskh Arabic", Tahoma, Arial, sans-serif;
     font-size: 1.3rem;
@@ -67,7 +67,7 @@
   .divider { display: block; width: 18rem; max-width: 80%; height: auto; margin: 0 auto 2.25rem; }
   nav { display: grid; gap: 1.5rem; }
   .link {
-    --top: #2c302c; --bottom: #131513; --edge: #000; --rim: #c9a227;
+    --top: #2c302c; --bottom: #131513; --edge: #000; --rim: #cfd3cf;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,14 +89,24 @@
     text-decoration: none;
     transition: transform 0.08s, box-shadow 0.08s;
   }
+  .label {
+    flex: 1;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    -webkit-text-stroke: 0.3px currentColor;
+  }
   .link svg {
     width: 3.1rem; height: 3.1rem; flex: none; fill: currentColor;
     filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35));
   }
-  .link.community { --top: #22b455; --bottom: #12782f; --edge: #0a4a1c; --rim: #d4af37; }
-  .link.chat svg  { color: #4ade80; }
-  .link.map svg, .link.audio svg { color: #f2c94c; }
-  .link.youtube   { --top: #ea2a47; --bottom: #b00d28; --edge: #6b0517; --rim: #d4af37; }
+  .link.community { --top: #22b455; --bottom: #12782f; --edge: #0a4a1c; --rim: #cfd3cf; }
+  .link.chat      { --top: #1aa598; --bottom: #0c6b63; --edge: #063f3a; }
+  .link.map       { --top: #3b78f5; --bottom: #1a45c2; --edge: #0f2a78; }
+  .link.audio     { --top: #ffd04a; --bottom: #e6a400; --edge: #8a6100; color: #1a1200; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
+  .link.audio svg { filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.45)); }
+  .link.youtube   { --top: #ea2a47; --bottom: #b00d28; --edge: #6b0517; --rim: #cfd3cf; }
   .link:hover { filter: brightness(1.08); }
   .link:active {
     transform: translateY(5px);
@@ -144,27 +154,27 @@
 
     <a class="link community" href="https://chat.whatsapp.com/FUiWbXjnqBK71aHdcXrvIP">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.3 1.3-1.8 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg>
-      اشترك في إعلانات الحسينية
+      <span class="label">اشترك في إعلانات الحسينية</span>
     </a>
 
     <a class="link chat" href="https://wa.me/12012020093">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2Z"/></svg>
-      تواصل معنا عبر الواتساب
+      <span class="label">تواصل معنا عبر الواتساب</span>
     </a>
 
     <a class="link map" href="https://maps.app.goo.gl/uwXeocYypne2wkSa8">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.500a2.5 2.5 0 0 1 0 5Z"/></svg>
-      موقعنا على خرائط جوجل
+      <span class="label">موقعنا على خرائط جوجل</span>
     </a>
 
     <a class="link youtube" href="https://www.youtube.com/@Altayyar">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800ZM10 15V9l5.200 3L10 15Z"/></svg>
-      شاهد قناتنا على يوتيوب
+      <span class="label">شاهد قناتنا على يوتيوب</span>
     </a>
 
     <a class="link audio" href="https://drive.google.com/drive/folders/10l-ZhUUZfvT3E6cXYx1mVa9fYYGWZo05?usp=sharing">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-9 9v5a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H5v-1a7 7 0 0 1 14 0v1h-3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h1a3 3 0 0 0 3-3v-5a9 9 0 0 0-9-9Z"/></svg>
-      التسجيلات الصوتية السابقة
+      <span class="label">التسجيلات الصوتية السابقة</span>
     </a>
 
   </nav>
