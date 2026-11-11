@@ -24,6 +24,7 @@
   body {
     margin: 0;
     min-height: 100vh;
+    min-height: 100dvh;
     background:
       radial-gradient(ellipse 80% 34% at 50% 0%, rgba(46, 190, 100, 0.22), transparent 72%),
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%2382e0a6' stroke-opacity='0.09' stroke-width='1'%3E%3Crect x='12' y='12' width='40' height='40'/%3E%3Crect x='12' y='12' width='40' height='40' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='6'/%3E%3C/g%3E%3C/svg%3E"),
@@ -39,15 +40,14 @@
   main {
     width: 100%;
     max-width: 30rem;
-    padding: 2rem 1.25rem 3rem;
+    padding: 0.75rem 1.25rem 1rem;
     text-align: center;
   }
   .logo {
-    width: 15rem;
-    max-width: 80%;
+    width: 7.5rem;
     height: auto;
-    border-radius: 1.25rem;
-    margin: 0 auto 1rem;
+    border-radius: 0.75rem;
+    margin: 0 auto 0.25rem 0;
     display: block;
   }
   h1 {
@@ -58,29 +58,30 @@
     clip: rect(0 0 0 0);
     white-space: nowrap;
   }
-  .tagline {
-    color: var(--text-soft);
-    font-size: 1.4rem;
+  .title {
+    margin: 0 0 0.9rem;
+    color: #d4af37;
+    font-size: clamp(1.3rem, 5.6vw, 1.6rem);
     font-weight: 700;
-    margin: 0 0 2rem;
+    line-height: 1.35;
   }
-  .divider { display: block; width: 18rem; max-width: 80%; height: auto; margin: 0 auto 2.25rem; }
-  nav { display: grid; gap: 1.5rem; }
+  .divider { display: block; width: 16rem; max-width: 80%; height: auto; margin: 1.4rem auto 0; }
+  nav { display: grid; gap: 1.05rem; }
   .link {
     --top: #2c302c; --bottom: #131513; --edge: #000; --rim: #cfd3cf;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    min-height: 5.5rem;
-    padding: 0.75rem 1.25rem;
-    border-radius: 1.25rem;
+    gap: 0.75rem;
+    min-height: 3.6rem;
+    padding: 0.35rem 1rem;
+    border-radius: 1rem;
     border: 2px solid var(--rim);
     background: linear-gradient(180deg, var(--top) 0%, var(--bottom) 100%);
     box-shadow:
       inset 0 3px 0 rgba(255, 255, 255, 0.35),
       inset 0 -3px 0 rgba(0, 0, 0, 0.18),
-      0 7px 0 var(--edge),
+      0 5px 0 var(--edge),
       0 12px 16px rgba(0, 0, 0, 0.55);
     color: #fff;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
@@ -92,13 +93,13 @@
   .label {
     flex: 1;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: clamp(1.2rem, 5.2vw, 1.45rem);
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.25;
     -webkit-text-stroke: 0.3px currentColor;
   }
   .link svg {
-    width: 3.1rem; height: 3.1rem; flex: none; fill: currentColor;
+    width: 2.4rem; height: 2.4rem; flex: none; fill: currentColor;
     filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35));
   }
   .link.community { --top: #22b455; --bottom: #12782f; --edge: #0a4a1c; --rim: #cfd3cf; }
@@ -109,21 +110,14 @@
   .link.youtube   { --top: #ea2a47; --bottom: #b00d28; --edge: #6b0517; --rim: #cfd3cf; }
   .link:hover { filter: brightness(1.08); }
   .link:active {
-    transform: translateY(5px);
+    transform: translateY(4px);
     box-shadow:
       inset 0 3px 0 rgba(255, 255, 255, 0.25),
       inset 0 -3px 0 rgba(0, 0, 0, 0.18),
-      0 2px 0 var(--edge),
-      0 4px 8px rgba(0, 0, 0, 0.5);
+      0 1px 0 var(--edge),
+      0 3px 6px rgba(0, 0, 0, 0.5);
   }
   .link:focus-visible { outline: 4px solid #ffd54a; outline-offset: 5px; }
-  footer {
-    margin-top: 2.5rem;
-    color: #d4af37;
-    font-size: 1.9rem;
-    font-weight: 700;
-    line-height: 1.5;
-  }
 </style>
 </head>
 <body>
@@ -135,18 +129,8 @@
   <!-- 2) NAME AND TAGLINE: the name is in the logo; the h1 is hidden but read by screen readers -->
   <h1>حسينية جعفر الطيار(ع) - سيهات</h1>
 
-  <svg class="divider" viewBox="0 0 300 20" aria-hidden="true">
-    <defs>
-      <linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#d4af37" stop-opacity="0"/><stop offset="1" stop-color="#d4af37"/></linearGradient>
-      <linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#d4af37"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></linearGradient>
-    </defs>
-    <rect x="0" y="9" width="126" height="2" fill="url(#gl)"/>
-    <rect x="174" y="9" width="126" height="2" fill="url(#gr)"/>
-    <polygon points="150,2 158,10 150,18 142,10" fill="none" stroke="#d4af37" stroke-width="1.5"/>
-    <polygon points="150,6.5 153.5,10 150,13.5 146.5,10" fill="#d4af37"/>
-    <circle cx="132" cy="10" r="2" fill="#d4af37"/>
-    <circle cx="168" cy="10" r="2" fill="#d4af37"/>
-  </svg>
+
+  <p class="title"><span style="white-space: nowrap;">حسينية جعفر الطيار(ع) -</span> <span style="white-space: nowrap;">سيهات</span></p>
 
   <nav aria-label="روابط الحسينية">
 
@@ -179,7 +163,19 @@
 
   </nav>
 
-  <footer><span style="white-space: nowrap;">حسينية جعفر الطيار(ع) -</span> <span style="white-space: nowrap;">سيهات</span></footer>
+  <svg class="divider" viewBox="0 0 300 20" aria-hidden="true">
+    <defs>
+      <linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#d4af37" stop-opacity="0"/><stop offset="1" stop-color="#d4af37"/></linearGradient>
+      <linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#d4af37"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></linearGradient>
+    </defs>
+    <rect x="0" y="9" width="126" height="2" fill="url(#gl)"/>
+    <rect x="174" y="9" width="126" height="2" fill="url(#gr)"/>
+    <polygon points="150,2 158,10 150,18 142,10" fill="none" stroke="#d4af37" stroke-width="1.5"/>
+    <polygon points="150,6.5 153.5,10 150,13.5 146.5,10" fill="#d4af37"/>
+    <circle cx="132" cy="10" r="2" fill="#d4af37"/>
+    <circle cx="168" cy="10" r="2" fill="#d4af37"/>
+  </svg>
+
 </main>
 </body>
 </html>
